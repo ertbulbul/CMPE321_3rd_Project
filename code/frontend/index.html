@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Main Page</title>
+        <script src="jquery-3.5.1.min.js"></script>
+        <script src="main.js"></script>
+	</head>
+	<style>
+
+		body {
+  			background-color: #F3FBEC;
+		}
+
+		table {
+			width: 65%;
+		}
+
+		th {
+			height: 35px;
+			background-color: #5E5E5E;
+  			color: white;
+		}
+
+		th, td {
+  			padding: 15px;
+  			text-align: left;
+  			border-bottom: : 1px solid black;
+		}
+
+		td {
+			font-size: 18px;
+		}
+
+		caption {
+			font-size: 18px;
+			font-weight: bold;
+			text-align: left;
+			margin-bottom: 10px;
+			margin-top: 20px;
+		}
+
+		.searchSubmitBtn {
+			background-color: #696969; /* Green */
+  			border: none;
+ 			color: white;
+ 			padding: 15px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+		}
+
+        .borrowerBtn {
+            background-color: #696969; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+		.libraryBtn {
+			background-color: #696969; /* Green */
+  			border: none;
+ 			color: white;
+ 			padding: 15px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+		}
+
+
+		.buttons {
+			margin: 50px 50px 50px 50px;
+		}
+
+		.buttonLibrary {
+			float: left;
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+		.buttonBorrower {
+			float: : left;
+			margin-left: 40px;
+		}
+
+		.searchElements {
+			margin: 50px 50px 50px 50px;
+		}
+
+		.searchByLabel {
+			float: left;
+		}
+
+		.searchByPicker {
+			float: left;
+			width: 100px;
+			margin-left: 40px;
+		}
+
+		.keywordLabel {
+			float: left;
+			margin-left: 40px;
+
+		}
+
+		.keywordInput {
+			float: left;
+			margin-left: 40px;
+		}
+
+		.submitButton {
+			float: left;
+			margin-left: 40px;
+		}
+
+		.borrowedBooksTable {
+			float: left;
+			width: 80%;
+			margin-top: 40px;
+			margin-left: 40px;
+			
+		}
+
+	</style>
+
+	<body>
+
+		<div class="buttons">
+			
+			<div class="buttonLibrary">
+				<button class="libraryBtn">Library</button>
+			</div>
+
+			<div class="buttonBorrower">
+				<button class="borrowerBtn">Borrower</button>
+			</div>
+
+		</div>
+
+		<div class="searchElements">
+			
+			<div class="searchByLabel">
+				<label>Search By</label>
+			</div>
+			<div class="searchByPicker">
+				<select class="searchBy">
+					<option value="searchBorrowedByBorrower">Identity No</option>
+					<option value="searchBorrewedByTitle">Title</option>
+				</select>
+			</div>
+
+			<div class="keywordLabel">
+				<label>Keyword</label>
+			</div>
+			
+			<div class="keywordInput">
+				<input class="keyword" name="Keyword">
+			</div>
+
+			<div class="submitButton">
+				<button class="searchSubmitBtn">Submit</button>
+			</div>
+			
+		</div>
+
+		<div class="borrowedBooksTable">
+			<table>
+				<caption>Borrowed Books</caption>
+				<thead>
+					<tr>
+						<th>Identity No</th>
+						<th>Title</th>
+						<th>Due Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+
+		</div>
+
+		
+		
+	</body>
+</html>
